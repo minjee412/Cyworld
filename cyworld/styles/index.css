@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.background{
+    background-image: url(../img/background.png);
+    width: 1024px;
+    height: 600px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.outerbox{
+    background-image: url(../img/outerbox.png);
+    width: 808px;
+    height: 544px;
+}
+
+.wrapper{
+    display: flex;
+    padding-top: 32px;
+    padding-left: 32px;
+   
+}
+
+.wrapper__left{
+    width: 208px;
+    height: 472px;
+    background-color: #EEEEEE;
+    margin-right: 5px;     
+}
+
+.wrapper__left__header{
+    width: 100%;
+    height: 30px;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.left__header__font{
+    padding-top: 10px;
+    font-size: 9px;
+    color: grey
+    
+}
+
+.left__body__header{
+    width : 100%;
+    height : 342px;
+    background-color: white ;
+    padding: 20px 30px;
+    border-radius: 10px 10px 0px 0px;
+    border-left: 1px solid #999999;
+    border-top: 1px solid #999999;
+    border-right: 1px solid #999999;
+}
+
+.body__header__image{
+    width: 148px;
+    height: 133px;
+    padding: 20px 30px 30px 30px;   
+    background-color: beige;
+    
+}
+
+.header__underline{
+    /* width: 100%;
+    height: 0px;
+    border: 1px dashed #0000005e;
+    padding-bottom: 0px; */
+    border-top: 1px dotted black;
+    /* 한방향만 선 지정 하는거 */
+	margin-top: 0px;
+	margin-bottom: 12px;
+}
+
+.wrapper_body_profle{
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 72px;
+}
+
+.profle{
+    color: grey;
+	font-size: 9px;
+}
+
+/* .left__body__icon{
+    size: 9px;
+    color:#000000;
+    text-align: center
+} */
+
+.left__body__font{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5px;
+    padding-left: 10px;
+}
+
+.left__body__body{
+    width: 100%;
+    height: 100px;
+    background-color: white  ;
+    padding-left: 36px;
+    border-radius: 0px 0px 10px 10px;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+
+}
+
+.body_body_font{
+    font-style: small;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    color: #000000;
+    padding-top: 30px;
+}
+
+.select{
+    width: 144px;
+}
+
+.wrapper__right{
+    width: 524px;
+    height: 472px;
+}
+
+.wrapper__right__header{
+    width: 100%;
+    height: 30px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__comment__left{
+    width: 192px;
+    height: 21px;
+    /* background-color: purple; */
+    font-size: 16px;
+    color: #55B2D4;
+    font-weight: bold;
+}
+
+.comment__right{
+    width: 90px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.header__comment__right{
+    font-size: 9px;
+}
+
+.red_letter{
+    font-size : 5px;
+    color: red;
+}
+
+
+.wrapper__right__body{
+    width: 100%;
+    height: 442px;
+    background-color:white; 
+    border: 1px solid #999999;
+    border-radius: 10px;
+}
+
+
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}

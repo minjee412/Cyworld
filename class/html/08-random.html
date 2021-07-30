@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let Auth = String(Math.floor( Math.random() * 1000000 )).padStart(6,"0")
+        console.log(Auth)
+        
+        // document.write("qwerqwerqwerwer")
+        //dom (doncument): 자바스크립트에서 html로 가서 수정해줘(내용을 써줘)
+
+        function aaa (){
+            document.getElementById("hello").innerText = "반갑습니다"
+        }
+</script>
+</head>
+<body>
+
+    <div id="hello">안녕하세요</div>
+    <button onclick="aaa()">클릭</button>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>homework</title>
+    <script>
+
+// 문1. minjee412@naver.com 을 minje****@naver.com 으로 만들기
+let email = "minjee412@naver.com"
+console.log(email.includes("@"));
+console.log(email.split("@"))
+email = email.split("@")
+console.log(email[0])
+let front = email[0].slice(0,5)
+front = front+"****"
+console.log(front+"@"+email[1])
+
+// 문2. 상수 number는 핸드폰 번호가 담긴 문자열입니다. 
+//해당 문자열을 "010", "1234", "5678"로 나눈 배열을 만드세요.
+const number = "01012345678"
+
+// 방법1
+let arr = []
+arr.push(number.slice(0,3))
+arr.push(number.slice(3,7))
+arr.push(number.slice(7,11))
+
+// 방법2 
+//let arr =[number.slice(0,3). number.slice(3,7), number.slice(7,11)]
+
+console.log (arr)
+
+
+// 문3. 주어진 fruits 배열에서 마지막 요소를 꺼내 newFruits에 넣어주세요.
+let fruit = ["사과","바나나","파인애플"]
+let newfruit=[] 
+
+// newfruit= [fruit[fruit.length-1]]
+// 설명: newfruit 에 아예 값을 할당한것.
+//       기존에 newfruit에 값이 있었다면 그게 없어지고 [fruit[fruit.length-1]]
+//       값이 들어 간다.
+
+newfruit.push(fruits[fruits.length-1])
+// 설명 : 기존 newfruit에 값이 있었다면, 그 값은 그대로 두고
+//        (fruits[fruits.length-1])의 값이 추가 된다.
+
+console.log(newfruit)
+
+// 문4. 주어진[] student 객체에 'name'이라는 키를 만들고, "철수"를 할당하세요.
+let student = {name:"철수"}
+
+console.log(student)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

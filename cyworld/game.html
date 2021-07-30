@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" href="styles/game.css">
+    <script>
+        
+        function wordGame(){
+            let word = document.getElementById("word").innerText
+            // console.log(word[4])
+
+            let myWord = document.getElementById("wordInput").value
+            // console.log(myWord[0])
+            let result = []
+
+            if(word[word.length-1] === myWord[0]){
+                document.getElementById("myWord").innerText = myWord
+                // console.log("정답입니다.") 
+                document.getElementById("result").innerText = "정답입니다."
+                document.getElementById("wordInput").value = ""
+            } else { 
+                document.getElementById("result").innerText = "땡"
+                document.getElementById("wordInput").value = "" }
+        }
+
+
+        
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper__header">
+            <div class="header__ment">
+                <div class="header__top">GAME 
+                    <span class="header__top__small">TODAY CHOICE</span>
+                </div>
+                <div class="header__underline"></div>
+            </div>
+            
+        </div>
+
+        <div class="wrapper__body">
+            <div class="wrapper__word">
+                <img src="../cyworld/img/word.png"/>
+                <div class="black__font"> 끝말잇기
+                </div>
+                <div class="gray__font">제시어: <span id="word" class="gray__font">뉴비즈코드</span>
+                </div>
+                <div class="word__texticon">
+                    <input class="word__text" type:text placeholder="단어를 입력하세요." id = "wordInput"/>
+                    <button class="word__button">
+                        <div class="black__font" onclick="wordGame()">검색</div></button> 
+                </div> 
+                <div id="result" class="gray__font"> 결과!</div>
+            </div>
+            <div class="wrapper__lotto">
+                <img src="../cyworld/img/lotto.png"/>
+                <div class="black__font">LOTTO</div>
+                <div class="gray__font">버튼을 누르세요.</div>
+                <div class="lotto__number">
+                    <div class="lotto__font">3</div>
+                    <div class="lotto__font">5</div>
+                    <div class="lotto__font">10</div>
+                    <div class="lotto__font">24</div>
+                    <div class="lotto__font">30</div>
+                    <div class="lotto__font">34</div>
+                </div>
+                <button class="lotto_button" onclick="">
+                    <div class="black__font">Button</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
